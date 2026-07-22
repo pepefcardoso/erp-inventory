@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ErpInventory.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+223a50f336ebe53fbff681eceaac15115140ae92")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b6c23fe234e7748664826c6972b3437272b3c656")]
 [assembly: System.Reflection.AssemblyProductAttribute("ErpInventory.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ErpInventory.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
