@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "c7/x+7jNu6w=",
+  "dgSpecHash": "0VNcxOjFxxU=",
   "success": true,
   "projectFilePath": "C:\\Users\\pedro.cardoso\\Documents\\erp-inventory\\tests\\ErpInventory.UnitTests\\ErpInventory.UnitTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pedro.cardoso\\.nuget\\packages\\coverlet.collector\\10.0.1\\coverlet.collector.10.0.1.nupkg.sha512",
+    "C:\\Users\\pedro.cardoso\\.nuget\\packages\\fluentvalidation\\12.1.1\\fluentvalidation.12.1.1.nupkg.sha512",
     "C:\\Users\\pedro.cardoso\\.nuget\\packages\\microsoft.codecoverage\\18.8.1\\microsoft.codecoverage.18.8.1.nupkg.sha512",
     "C:\\Users\\pedro.cardoso\\.nuget\\packages\\microsoft.net.test.sdk\\18.8.1\\microsoft.net.test.sdk.18.8.1.nupkg.sha512",
     "C:\\Users\\pedro.cardoso\\.nuget\\packages\\microsoft.testplatform.objectmodel\\18.8.1\\microsoft.testplatform.objectmodel.18.8.1.nupkg.sha512",
