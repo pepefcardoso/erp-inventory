@@ -1,0 +1,12 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/ErpInventory.Api/ErpInventory.Api.csproj" />
+    <Project Path="src/ErpInventory.Application/ErpInventory.Application.csproj" />
+    <Project Path="src/ErpInventory.Domain/ErpInventory.Domain.csproj" />
+    <Project Path="src/ErpInventory.Infrastructure/ErpInventory.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/ErpInventory.IntegrationTests/ErpInventory.IntegrationTests.csproj" />
+    <Project Path="tests/ErpInventory.UnitTests/ErpInventory.UnitTests.csproj" />
+  </Folder>
+</Solution>
