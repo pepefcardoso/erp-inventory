@@ -1,3 +1,3 @@
-﻿namespace ErpInventory.Application;
+namespace ErpInventory.Application;
 
 public class AssemblyReference { }

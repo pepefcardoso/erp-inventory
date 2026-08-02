@@ -1,0 +1,45 @@
+root = true
+
+# ── All files ──────────────────────────────────────────────────────────────────
+[*]
+charset                  = utf-8
+end_of_line              = lf
+indent_style             = space
+indent_size              = 4
+trim_trailing_whitespace = true
+insert_final_newline     = true
+
+# ── XML / project files ────────────────────────────────────────────────────────
+[*.{xml,csproj,props,targets,slnx}]
+indent_size = 2
+
+# ── C# source ─────────────────────────────────────────────────────────────────
+[*.cs]
+indent_size  = 4
+tab_width    = 4
+
+# var usage — match existing code style (var for apparent types)
+dotnet_style_var_for_built_in_types                   = false:suggestion
+dotnet_style_var_when_type_is_apparent                = true:suggestion
+dotnet_style_var_elsewhere                            = false:suggestion
+
+# Namespaces — match existing code (file-scoped in all hand-written files)
+# Migration files use block-scoped; leave at suggestion so formatter doesn't
+# error when it encounters the generated block-scope style.
+csharp_style_namespace_declarations                   = file_scoped:suggestion
+
+# Expression body — match existing code (constructors use => for single-liner)
+csharp_style_expression_bodied_constructors           = when_on_single_line:suggestion
+csharp_style_expression_bodied_methods                = when_on_single_line:suggestion
+csharp_style_expression_bodied_properties             = true:suggestion
+
+# Modifier ordering — .NET standard
+dotnet_sort_system_directives_first                   = true
+csharp_preferred_modifier_order                       = public,private,protected,internal,file,static,extern,new,virtual,abstract,sealed,override,readonly,unsafe,required,volatile,async:suggestion
+
+# Trailing commas — off (not used in existing code)
+# New-line preferences — match existing Allman style
+csharp_new_line_before_open_brace                     = all
+csharp_new_line_before_else                           = true
+csharp_new_line_before_catch                          = true
+csharp_new_line_before_finally                        = true

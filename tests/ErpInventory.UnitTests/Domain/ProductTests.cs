@@ -1,4 +1,4 @@
-﻿using ErpInventory.Domain.Entities;
+using ErpInventory.Domain.Entities;
 
 namespace ErpInventory.UnitTests.Domain;
 

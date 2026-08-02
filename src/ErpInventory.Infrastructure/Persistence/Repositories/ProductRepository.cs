@@ -1,4 +1,4 @@
-﻿using ErpInventory.Application.Common.Interfaces;
+using ErpInventory.Application.Common.Interfaces;
 using ErpInventory.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 

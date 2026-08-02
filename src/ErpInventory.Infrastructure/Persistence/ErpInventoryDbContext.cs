@@ -1,4 +1,4 @@
-﻿using ErpInventory.Domain.Entities;
+using ErpInventory.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace ErpInventory.Infrastructure.Persistence;

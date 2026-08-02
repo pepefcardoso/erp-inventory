@@ -1,4 +1,4 @@
-﻿namespace ErpInventory.Domain.Entities;
+namespace ErpInventory.Domain.Entities;
 
 public class Product
 {
