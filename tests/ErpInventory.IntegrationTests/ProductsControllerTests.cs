@@ -1,7 +1,7 @@
-using ErpInventory.Application.Products.Commands;
-using ErpInventory.Application.Products.Queries;
 using System.Net;
 using System.Net.Http.Json;
+using ErpInventory.Application.Products.Commands;
+using ErpInventory.Application.Products.Queries;
 
 namespace ErpInventory.IntegrationTests;
 
