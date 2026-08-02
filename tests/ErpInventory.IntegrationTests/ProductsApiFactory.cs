@@ -14,8 +14,10 @@ public class ProductsApiFactory : WebApplicationFactory<Program>
         builder.ConfigureServices(services =>
         {
             services.RemoveAll<DbContextOptions<ErpInventoryDbContext>>();
+            var connStr = Environment.GetEnvironmentVariable("TEST_DB_CONNECTION")
+                ?? "Host=localhost;Port=5432;Database=erp_inventory_test;Username=postgres;Password=";
             services.AddDbContext<ErpInventoryDbContext>(options =>
-                options.UseNpgsql("Host=localhost;Port=5432;Database=erp_inventory_test;Username=postgres;Password=postgres"));
+                options.UseNpgsql(connStr));
 
             using var scope = services.BuildServiceProvider().CreateScope();
             var db = scope.ServiceProvider.GetRequiredService<ErpInventoryDbContext>();
