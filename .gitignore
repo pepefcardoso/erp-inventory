@@ -1,6 +1,7 @@
 bin/
 obj/
 *.user
+*.Backup.tmp
 *.suo
 .vs/
 
@@ -21,3 +22,9 @@ docker-compose.override.yml
 
 .DS_Store
 Thumbs.db
+
+AGENTS.md
+BACKLOG.md
+DECISIONS.md
+PROGRESS.md
+plan-prompt.md
