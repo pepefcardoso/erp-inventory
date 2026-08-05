@@ -1,3 +1,4 @@
+using ErpInventory.Application.Common.Models;
 using ErpInventory.Application.Products.Commands;
 using ErpInventory.Application.Products.Queries;
 using MediatR;
@@ -10,6 +11,13 @@ namespace ErpInventory.Api.Controllers;
 public class ProductsController(IMediator mediator) : ControllerBase
 {
     private readonly IMediator _mediator = mediator;
+
+    [HttpGet]
+    public async Task<ActionResult<PaginatedList<ProductDto>>> GetProducts([FromQuery] int pageNumber = 1, [FromQuery] int pageSize = 10, CancellationToken cancellationToken = default)
+    {
+        var result = await _mediator.Send(new GetProductsListQuery(pageNumber, pageSize), cancellationToken);
+        return Ok(result);
+    }
 
     [HttpPost]
     public async Task<ActionResult<Guid>> Create(CreateProductCommand command, CancellationToken cancellationToken)

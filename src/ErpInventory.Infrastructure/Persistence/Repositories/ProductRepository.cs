@@ -18,4 +18,23 @@ public class ProductRepository : IProductRepository
         await _context.Products.AddAsync(product, cancellationToken);
         await _context.SaveChangesAsync(cancellationToken);
     }
+
+    public async Task<(IEnumerable<Product> Items, int TotalCount)> GetPagedAsync(int pageNumber, int pageSize, CancellationToken cancellationToken)
+    {
+        var totalCount = await _context.Products.CountAsync(cancellationToken);
+
+        if (totalCount == 0)
+        {
+            return (Enumerable.Empty<Product>(), 0);
+        }
+
+        var items = await _context.Products
+            .AsNoTracking()
+            .OrderBy(p => p.Id)
+            .Skip((pageNumber - 1) * pageSize)
+            .Take(pageSize)
+            .ToListAsync(cancellationToken);
+
+        return (items, totalCount);
+    }
 }
